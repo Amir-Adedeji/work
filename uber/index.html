@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Uber — Landing (Replica-style)</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- NAVBAR -->
+  <nav class="nav" role="navigation" aria-label="Primary">
+    <div class="nav-wrap">
+      <div class="nav-left">
+        <a class="logo" href="#" aria-label="Uber Home">
+          <span class="logo-mark">U</span>
+          <span>Uber</span>
+        </a>
+        <span class="chip" aria-hidden="true">Nigeria</span>
+        <div class="nav-links" aria-label="Main links">
+          <a href="#ride">Ride</a>
+          <a href="#drive">Drive</a>
+          <a href="#eat">Eat</a>
+          <a href="#business">Business</a>
+          <a href="#about">About</a>
+        </div>
+      </div>
+      <div class="nav-right">
+        <a class="nav-links" href="#lang" aria-label="Change language">🌐 EN</a>
+        <div class="nav-cta">
+          <button class="btn ghost" aria-label="Sign in">Sign in</button>
+          <button class="btn" aria-label="Sign up">Sign up</button>
+        </div>
+        <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="mobileMenu">Menu ▾</button>
+      </div>
+    </div>
+    <div id="mobileMenu" class="mobile-menu" role="menu" aria-label="Mobile">
+      <a href="#ride" role="menuitem">Ride</a>
+      <a href="#drive" role="menuitem">Drive</a>
+      <a href="#eat" role="menuitem">Eat</a>
+      <a href="#business" role="menuitem">Business</a>
+      <a href="#about" role="menuitem">About</a>
+      <a href="#" role="menuitem">Sign in</a>
+      <a href="#" role="menuitem">Sign up</a>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <header class="hero">
+    <div class="hero-wrap">
+      <section class="panel" aria-labelledby="heroTabs">
+        <div class="panel-header" id="heroTabs" role="tablist" aria-label="Ride or Drive">
+          <button class="tab active" role="tab" aria-selected="true" id="tab-ride" aria-controls="panel-ride">Ride</button>
+          <button class="tab" role="tab" aria-selected="false" id="tab-drive" aria-controls="panel-drive">Drive</button>
+        </div>
+        <div class="panel-body" id="panel-ride" role="tabpanel" aria-labelledby="tab-ride">
+          <h1>Get where you’re going, easily</h1>
+          <p>Request a ride in minutes. Enter your pickup and destination to get moving.</p>
+          <div class="field">
+            <input class="input" placeholder="Enter pickup" aria-label="Pickup" />
+            <input class="input" placeholder="Enter destination" aria-label="Destination" />
+          </div>
+          <div class="field">
+            <button class="primary">See prices</button>
+            <button class="secondary">Schedule for later</button>
+          </div>
+          <div class="muted-row">📍 Your location helps us show accurate pricing.</div>
+        </div>
+        <div class="panel-body" id="panel-drive" role="tabpanel" aria-labelledby="tab-drive" hidden>
+          <h1>Earn on your own schedule</h1>
+          <p>Sign up to drive and make money when it works for you. Set your hours and go.</p>
+          <div class="field">
+            <input class="input" placeholder="Enter your city" aria-label="City" />
+          </div>
+          <div class="field">
+            <button class="primary">Start driving</button>
+            <button class="secondary">Requirements</button>
+          </div>
+          <div class="muted-row">🛡️ Background checks and in‑app safety tools included.</div>
+        </div>
+      </section>
+
+      <aside class="hero-media" aria-hidden="true">
+        <div class="placeholder">
+          <svg width="120" height="120" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <rect x="3" y="11" width="18" height="8" rx="2" stroke="white" stroke-width="1.5"/>
+            <circle cx="7" cy="20" r="2" fill="white"/>
+            <circle cx="17" cy="20" r="2" fill="white"/>
+            <path d="M7 11V9a4 4 0 0 1 4-4h2a4 4 0 0 1 4 4v2" stroke="white" stroke-width="1.5"/>
+          </svg>
+        </div>
+        <div class="badge">Reliable rides, day or night</div>
+      </aside>
+    </div>
+  </header>
+
+  <!-- VALUE CARDS -->
+  <section class="section" id="ride">
+    <div class="cards">
+      <article class="card">
+        <div class="media">🚗</div>
+        <h3>Request in a tap</h3>
+        <p>Open the app and enter your destination for an upfront price and ETA.
+        </p>
+        <div class="actions">
+          <button class="link-btn">Get the app</button>
+          <button class="link-btn">How it works</button>
+        </div>
+      </article>
+      <article class="card">
+        <div class="media">🛡️</div>
+        <h3>Safety features</h3>
+        <p>Share your trip, access emergency help, and get 24/7 support in‑app.</p>
+        <div class="actions">
+          <button class="link-btn">See safety</button>
+          <button class="link-btn">Help Center</button>
+        </div>
+      </article>
+      <article class="card">
+        <div class="media">💳</div>
+        <h3>Multiple ways to pay</h3>
+        <p>Pay with card, cash in select cities, or link a wallet for seamless checkouts.</p>
+        <div class="actions">
+          <button class="link-btn">Payment options</button>
+          <button class="link-btn">Promotions</button>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- BUSINESS STRIPE -->
+  <section class="section stripe" id="business">
+    <div class="strip-grid">
+      <div>
+        <h2>Uber for Business</h2>
+        <p>Manage rides and meals for your team with controls, reporting, and centralized billing.</p>
+        <div class="field">
+          <button class="primary">Get started</button>
+          <button class="secondary">Learn more</button>
+        </div>
+      </div>
+      <div class="hero-media" aria-hidden="true">
+        <div class="placeholder" style="min-height:220px">
+          <svg width="120" height="120" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <rect x="4" y="4" width="16" height="16" rx="3" stroke="white" stroke-width="1.5"/>
+            <path d="M8 10h8M8 14h5" stroke="white" stroke-width="1.5"/>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EATS STRIPE -->
+  <section class="section" id="eat">
+    <div class="strip-grid">
+      <div class="hero-media" aria-hidden="true">
+        <div class="placeholder" style="min-height:220px">
+          <svg width="120" height="120" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path d="M8 3v9a3 3 0 1 1-2 0V3m8 0v18m4-9h-8" stroke="white" stroke-width="1.5"/>
+          </svg>
+        </div>
+      </div>
+      <div>
+        <h2>Order meals with Uber Eats</h2>
+        <p>From local favorites to national brands—get food delivered fast.</p>
+        <div class="field">
+          <input class="input" placeholder="Enter delivery address" aria-label="Delivery address" />
+          <button class="primary">Find food</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer" role="contentinfo">
+    <div class="wrap">
+      <div class="footer-top">
+        <a class="logo" href="#" aria-label="Uber Home">
+          <span class="logo-mark">U</span>
+          <span>Uber</span>
+        </a>
+        <div>
+          <a href="#" style="color:#fff;margin-right:12px">🌐 English</a>
+          <a href="#" style="color:#fff">📍 Nigeria</a>
+        </div>
+      </div>
+      <div class="footer-grid">
+        <div>
+          <h4>Company</h4>
+          <a href="#about">About us</a>
+          <a href="#news">Newsroom</a>
+          <a href="#investors">Investors</a>
+          <a href="#blog">Blog</a>
+        </div>
+        <div>
+          <h4>Products</h4>
+          <a href="#ride">Ride</a>
+          <a href="#eat">Uber Eats</a>
+          <a href="#business">Business</a>
+          <a href="#freight">Freight</a>
+        </div>
+        <div>
+          <h4>Safety</h4>
+          <a href="#safety">Safety features</a>
+          <a href="#community">Community Guidelines</a>
+          <a href="#diversity">Diversity & Inclusion</a>
+        </div>
+        <div>
+          <h4>Support</h4>
+          <a href="#help">Help Center</a>
+          <a href="#accessibility">Accessibility</a>
+          <a href="#faqs">FAQs</a>
+        </div>
+      </div>
+      <div class="sub-footer">
+        <p style="margin:0;color:#9ca3af">© 2025 Example replica for educational use.</p>
+        <div style="display:flex;gap:10px">
+          <a href="#">Twitter</a>
+          <a href="#">Instagram</a>
+          <a href="#">Facebook</a>
+          <a href="#">LinkedIn</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
