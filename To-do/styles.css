@@ -10,30 +10,33 @@
     color: #E5E7EB; 
     min-height: 100vh;
   }
+
+  .container {
+    max-width: 900px;
+    margin: 32px auto;
+    padding: 0 32px;
+    background-color: #1E1E2E; 
+    padding: 0.7rem 1.2rem;
+    border-radius: 0.5rem;
+  }
   
   .navbar {
     background-color: #111827;
-    padding: 1rem;
+    padding: 16px;
     text-align: center;
     border-bottom: 1px solid #2D2D3A;
   }
   
   .navbar h1 {
     color: #FFFFFF;
-    font-size: 1.5rem;
-  }
-  
-  .container {
-    max-width: 900px;
-    margin: 2rem auto;
-    padding: 0 1rem;
+    font-size: 24px;
   }
   
   #task-form {
     display: flex;
     justify-content: center;
-    margin-bottom: 2rem;
-    gap: 0.5rem;
+    margin-bottom: 32px;
+    gap: 16px;
   }
   
   #task-input {
@@ -41,7 +44,7 @@
     padding: 0.7rem 1rem;
     border-radius: 0.5rem;
     border: none;
-    outline: none;
+    /* outline: none; */
     background-color: #2A2A3D;
     color: #E5E7EB;
   }
@@ -64,6 +67,22 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 1.5rem;
+    /* margin-left: 20rem; */
+    /* background-color: #2D2D3A;
+    padding: 0.7rem 1.2rem;
+    border-radius: 0.5rem; */
+  }
+
+  .todo {
+    background-color: #2D2D3A;
+    padding: 0.7rem 1.2rem;
+    border-radius: 0.5rem;
+  }
+
+  .completed {
+    background-color: #2D2D3A;
+    padding: 0.7rem 1.2rem;
+    border-radius: 0.5rem;
   }
   
   .tasks h2 {
@@ -79,7 +98,7 @@
   }
   
   .tasks li {
-    background-color: #2A2A3D;
+    background-color: #1d1d2e;
     padding: 0.8rem 1rem;
     margin-bottom: 0.8rem;
     border-radius: 0.5rem;
@@ -90,8 +109,8 @@
   }
   
   .completed li {
-    background-color: #1F2937;
-    text-decoration: line-through;
+    background-color: #18212e;
+    /* text-decoration: line-through; */
     color: #9CA3AF;
   }
   .actions button {
